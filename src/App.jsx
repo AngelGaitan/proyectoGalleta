@@ -1,33 +1,30 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
 
+import './App.css'
+import { useState } from 'react'
+import Frases from './assets/components/Frases'
+import Citas from './assets/components/Citas'
+import sentence from './assets/data/sentence.json'
 function App() {
-  const [count, setCount] = useState(0)
+  const bgFondos = ["public/fondos/fondo1.jpg","public/fondos/fondo2.jpg", "public/fondos/fondo3.jpg", "public/fondos/fondo4.jpg","public/fondos/fondo1.jpg","public/fondos/fondo2.jpg", "public/fondos/fondo3.jpg", "public/fondos/fondo4.jpg","public/fondos/fondo1.jpg","public/fondos/fondo2.jpg", "public/fondos/fondo3.jpg", "public/fondos/fondo4.jpg","public/fondos/fondo1.jpg","public/fondos/fondo2.jpg", "public/fondos/fondo3.jpg", "public/fondos/fondo4.jpg",
+]
+  const [ index, setIndex] = useState(0)
+
+   const luck = () => {
+     setIndex(Math.floor(Math.random() * ((sentence.length -1) - 0 + 1)) + 0)
+  }
+  document.body.style = `background: url(${bgFondos[index]}) no-repeat center center fixed; 
+  background-size: cover;
+  display: flex; justify-content: center;`
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <div className='caja'>
+    <Frases data={sentence[index]}/>
+    <Citas cita={sentence[index]}/>
+    <button onClick={luck}
+    >probar mi frase</button>
+  
+  </div>
     </>
   )
 }
