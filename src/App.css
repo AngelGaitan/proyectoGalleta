@@ -59,12 +59,10 @@ button:hover{
   transform: scale(1.1);
   background-color: rgba(250, 250, 250, .9);
 }
+
 .citas{
-position: absolute;
-  bottom: -4rem;
-  left: 5.5rem;
-  border: 2px solid black;
-  width: 300px;
-  text-align: center;
-  background-color: rgba(250, 250, 250, .5);
+  margin-left: 450px;
+  border: 2px dashed black;
+  width: 100px;
+  background: rgba( 20,20,20 , .5);
 }
