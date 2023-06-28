@@ -5,7 +5,7 @@ import Frases from './assets/components/Frases'
 import Citas from './assets/components/Citas'
 import sentence from './assets/data/sentence.json'
 function App() {
-  const bgFondos = ["public/fondos/fondo1.jpg","public/fondos/fondo2.jpg", "public/fondos/fondo3.jpg", "public/fondos/fondo4.jpg","public/fondos/fondo1.jpg","public/fondos/fondo2.jpg", "public/fondos/fondo3.jpg", "public/fondos/fondo4.jpg","public/fondos/fondo1.jpg","public/fondos/fondo2.jpg", "public/fondos/fondo3.jpg", "public/fondos/fondo4.jpg","public/fondos/fondo1.jpg","public/fondos/fondo2.jpg", "public/fondos/fondo3.jpg", "public/fondos/fondo4.jpg",
+  const bgFondos = ["fondos/fondo1.jpg","public/fondos/fondo2.jpg", "public/fondos/fondo3.jpg", "public/fondos/fondo4.jpg","public/fondos/fondo1.jpg","public/fondos/fondo2.jpg", "public/fondos/fondo3.jpg", "public/fondos/fondo4.jpg","public/fondos/fondo1.jpg","public/fondos/fondo2.jpg", "public/fondos/fondo3.jpg", "public/fondos/fondo4.jpg","public/fondos/fondo1.jpg","public/fondos/fondo2.jpg", "public/fondos/fondo3.jpg", "public/fondos/fondo4.jpg",
 ]
   const [ index, setIndex] = useState(0)
 
