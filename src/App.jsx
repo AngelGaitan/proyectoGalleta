@@ -1,8 +1,8 @@
 
 import './App.css'
 import { useState } from 'react'
-import Frases from './assets/components/Frases'
-import Citas from './assets/components/Citas'
+import Frases from './components/Frases'
+import Citas from './components/Citas'
 import sentence from './assets/data/sentence.json'
 function App() {
   const bgFondos = ["fondos/fondo1.jpg","fondos/fondo2.jpg", "fondos/fondo3.jpg", "fondos/fondo4.jpg","fondos/fondo1.jpg","fondos/fondo2.jpg", "fondos/fondo3.jpg", "fondos/fondo4.jpg","fondos/fondo1.jpg","fondos/fondo2.jpg", "fondos/fondo3.jpg", "fondos/fondo4.jpg","fondos/fondo1.jpg","fondos/fondo2.jpg", "fondos/fondo3.jpg", "fondos/fondo4.jpg",
