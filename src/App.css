@@ -99,8 +99,9 @@ transition: .5s;
       width: 300px;
       height: 300px;
       align-items: center;
-      margin-bottom: 100px;
+      margin-bottom: 50px;
       border-radius: 20px;
       margin: 0 auto;
+
 }
 }
