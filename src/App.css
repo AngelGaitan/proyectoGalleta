@@ -101,5 +101,6 @@ transition: .5s;
       align-items: center;
       margin-bottom: 100px;
       border-radius: 20px;
+      margin: 0 auto;
 }
 }
